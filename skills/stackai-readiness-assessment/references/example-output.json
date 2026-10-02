@@ -1,0 +1,61 @@
+{
+  "assessment_version": "1.0",
+  "company_name": "Example Ltd",
+  "development_model": "external_vendor",
+  "business_goal": "reduce vendor dependency and improve code review",
+  "first_system": "customer portal",
+  "evidence": {
+    "repository_available": true,
+    "repository_owner": "vendor",
+    "development_environment": true,
+    "rollback_available": true,
+    "internal_owner": true,
+    "sensitive_data": true,
+    "credentials_owner": "mixed",
+    "git_workflow": "pull_requests"
+  },
+  "scores": {
+    "business_objective": 2,
+    "system_access": 2,
+    "asset_ownership": 0,
+    "internal_owner": 2,
+    "dev_test_rollback": 2,
+    "permissions_governance": 1,
+    "security": 1,
+    "ongoing_support": 2
+  },
+  "total_score": 12,
+  "readiness_status": "ready_after_limited_preparation",
+  "strengths": [
+    "Repository is available",
+    "Development/Test environment exists",
+    "Rollback capability exists",
+    "Internal owner is identified"
+  ],
+  "gaps": [
+    "Repository ownership is controlled by the external vendor",
+    "Permissions and credential ownership are only partially governed"
+  ],
+  "risks": [
+    "Business continuity depends on the current development vendor",
+    "Sensitive information requires clearer access governance"
+  ],
+  "critical_blockers": [
+    "Repository ownership is controlled by the external vendor"
+  ],
+  "recommended_use_case": "Read-only codebase analysis, documentation, and vendor code review",
+  "recommended_pilot": "30-day read-only pilot on one repository with no Production access",
+  "required_preparation": [
+    "Establish business-controlled repository access",
+    "Map credentials and account ownership",
+    "Define Claude Code permissions for the pilot"
+  ],
+  "next_actions": [
+    "Transfer or mirror the repository into a business-controlled GitHub organization",
+    "Create an asset and access inventory",
+    "Create an initial CLAUDE.md",
+    "Run the pilot in Development/Test",
+    "Review results after 30 days"
+  ],
+  "recommended_stackai_action": "Implementation readiness workshop followed by a controlled pilot"
+}
