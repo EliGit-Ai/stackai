@@ -1,0 +1,47 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Credentials / local configuration
+credentials/
+secrets/
+.n8n/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+tmp/
+
+# Local exports / backups
+*.bak
+*.backup
+*.zip
+
+# Generated local reports if they contain customer data
+output/
+reports/generated/
