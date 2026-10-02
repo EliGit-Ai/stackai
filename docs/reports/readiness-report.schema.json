@@ -1,0 +1,74 @@
+{
+  "report": {
+    "company_name": "string",
+    "contact_name": "string",
+    "report_date": "string",
+    "score_total": "integer 0-16",
+    "readiness_status": "string",
+    "critical_blocker_summary": "string",
+    "executive_summary": "string",
+    "business_implication": "string",
+    "critical_blockers": [
+      "string"
+    ],
+    "dimensions": [
+      {
+        "name": "string",
+        "score": "0|1|2",
+        "status": "string",
+        "note": "string"
+      }
+    ],
+    "strengths": [
+      "string"
+    ],
+    "gaps": [
+      "string"
+    ],
+    "risks": [
+      {
+        "risk": "string",
+        "level": "נמוך|בינוני|גבוה",
+        "impact": "string",
+        "action": "string"
+      }
+    ],
+    "pilot_name": "string",
+    "pilot_goal": "string",
+    "pilot_duration": "string",
+    "pilot_users": "string",
+    "pilot_scope": "string",
+    "production_access": "string",
+    "pilot_steps": [
+      "string"
+    ],
+    "pilot_metrics": [
+      {
+        "metric": "string",
+        "baseline": "string",
+        "target": "string"
+      }
+    ],
+    "actions": [
+      {
+        "phase": "string",
+        "action": "string",
+        "owner": "string",
+        "outcome": "string"
+      }
+    ],
+    "governance": [
+      "string"
+    ],
+    "deliverables": [
+      "string"
+    ],
+    "next_step": "string",
+    "snapshot": [
+      [
+        "field",
+        "value"
+      ]
+    ]
+  }
+}
